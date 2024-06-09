@@ -1,0 +1,51 @@
+[init]
+	templateDir =  main
+	defaultBranch = main
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
+[user]
+	name = Gabriel Trzimajewski
+	email = 95551770+Sn0wye@users.noreply.github.com
+	editor = vim
+	signinkey = 32486A4959E62DC2E5F682EC2CCC949C4D40646E
+	signingkey = 2CCC949C4D40646E
+
+[code]
+	editor = vscode
+
+[credential]
+	helper = store
+
+
+[alias]
+    # clean all local branches not in the remote
+    clear = branch -r | egrep -v -f /dev/fd/0  <(git branch -vv | grep origin) | xargs git branch -d 
+    cm = commit -m
+    cam = commit --amend -m
+    dcm = commit -a -m
+    ch = checkout
+    cp = cherry-pick
+    br = branch
+    brr = branch -M
+    undo = reset HEAD~1
+    rp = remote
+    st = status
+    mg = merge
+    li = log --pretty=format:"%C(blue)%h%Cred%d\\ %Creset%s%C(yellow)\\ [%cn]" --decorate
+    ls = log --pretty=format:"%C(blue)%h%Cred%d\\ %Creset%s%C(yellow)\\ [%cn]" --decorate --graph
+    ll = log --pretty=format:"%C(blue)%h%Cred%d\\ %Creset%s%C(yellow)\\ %ar\\ [%cn]" --decorate --numstat
+    fpush = push -u origin HEAD
+[safe]
+[push]
+	default = current
+	autoSetupRemote = true
+[core]
+	autocrlf = input
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
