@@ -11,8 +11,8 @@ alias p="pnpm"
 alias g="git"
 alias cls="clear"
 alias hosts="sudo code /etc/hosts /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf"
-alias ssh-oracle="ssh ubuntu@164.152.43.166 -i ~/.ssh/oracle.pem"
-alias ssh-mi="ssh ubuntu@ec2-54-80-122-187.compute-1.amazonaws.com -i ~/.ssh/MundoInvestDev.pem"
+alias ssh-oracle="command ssh ubuntu@164.152.43.166 -i ~/.ssh/oracle.key"
+alias ssh-mi="command ssh ubuntu@ec2-54-80-122-187.compute-1.amazonaws.com -i ~/.ssh/MundoInvestDev.pem"
 alias bun-tsconfig="generate_bun_tsconfig; true"
 
 # Functions
@@ -66,6 +66,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Shell integrations
 eval "$(starship init zsh)"
+source <(fzf --zsh)
 eval "$(zoxide init --cmd cd zsh)"
 
-PATH=~/.console-ninja/.bin:$PATH
+
+# sst
+export PATH=/Users/snowye/.sst/bin:$PATH
