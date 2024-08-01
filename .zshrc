@@ -66,6 +66,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Shell integrations
 eval "$(starship init zsh)"
+source <(fzf --zsh)
 eval "$(zoxide init --cmd cd zsh)"
 
-PATH=~/.console-ninja/.bin:$PATH
+
+# sst
+export PATH=/Users/snowye/.sst/bin:$PATH
