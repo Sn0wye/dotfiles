@@ -69,6 +69,5 @@ eval "$(starship init zsh)"
 source <(fzf --zsh)
 eval "$(zoxide init --cmd cd zsh)"
 
-
 # sst
 export PATH=/Users/snowye/.sst/bin:$PATH
