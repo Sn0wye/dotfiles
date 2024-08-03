@@ -9,3 +9,6 @@ italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
 bold_italic = { family = "JetBrainsMono Nerd Font", style = "BoldItalic" }
 
 size = 18.0
+
+[window]
+padding = { x = 10, y = 10 }
