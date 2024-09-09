@@ -59,6 +59,13 @@ killport() {
     fi
 }
 
+get_secret() {
+  aws secretsmanager get-secret-value \
+    --secret-id "$1" \
+    --query SecretString \
+    --output text | jq -r .
+}
+
 # Oh My Zsh settings
 autoload -Uz compinit
 compinit -i
@@ -71,3 +78,9 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # sst
 export PATH=/Users/snowye/.sst/bin:$PATH
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
