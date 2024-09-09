@@ -1,14 +1,43 @@
-import = [
-  "~/.config/alacritty/omni.toml",
-]
+import = ["~/.config/alacritty/omni.toml"]
+
+[bell]
+animation = "EaseOutExpo"
+duration = 0
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font", style = "SemiBold" }
-bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
-italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
-bold_italic = { family = "JetBrainsMono Nerd Font", style = "BoldItalic" }
-
 size = 18.0
 
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "SemiBold"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "BoldItalic"
+
+[cursor]
+blink_interval = 500
+blink_timeout = 5
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "Off"
+shape = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[window.padding]
+x = 4
+y = 0
+
 [window]
-padding = { x = 10, y = 10 }
+decorations = "none"
