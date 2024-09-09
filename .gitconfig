@@ -11,8 +11,8 @@
 	name = Gabriel Trzimajewski
 	email = 95551770+Sn0wye@users.noreply.github.com
 	editor = vim
-	signinkey = 32486A4959E62DC2E5F682EC2CCC949C4D40646E
-	signingkey = 2CCC949C4D40646E
+	signinkey = 6484D923B1300183331E5177A5780E721E66CA40
+	signingkey = A5780E721E66CA40
 
 [code]
 	editor = vscode
