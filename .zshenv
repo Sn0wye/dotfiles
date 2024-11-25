@@ -6,7 +6,7 @@ export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 
 # Docker path
-export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+export PATH="/Applications/OrbStack.app/Contents/MacOS/xbin/docker"
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -34,4 +34,4 @@ case ":$PATH:" in
 esac
 
 # GPG
-export GPG_TTY=$(tty)
+# export GPG_TTY=$(tty)

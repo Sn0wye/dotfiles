@@ -5,7 +5,6 @@ alias htdocs="cd /Applications/MAMP/htdocs"
 alias zshconfig="code ~/.zshrc"
 alias reload="source ~/.zshrc"
 alias lines="git ls-files | xargs wc -l"
-alias docker="/Applications/Docker.app/Contents/Resources/bin/docker"
 alias cat="bat"
 alias p="pnpm"
 alias g="git"
@@ -16,6 +15,11 @@ alias hosts="sudo code /etc/hosts /Applications/MAMP/conf/apache/extra/httpd-vho
 alias bun-tsconfig="generate_bun_tsconfig; true"
 
 # Functions
+
+pr() {
+  gh pr create --title "$(git branch --show-current)" "$@"
+}
+
 generate_bun_tsconfig() {
     if [ -f "tsconfig.json" ]; then
         echo "❌ Failed: tsconfig.json already exists"
@@ -83,4 +87,7 @@ export PATH=/Users/snowye/.sst/bin:$PATH
 
 eval "$(atuin init zsh)"
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+export JAVA_HOME=$(/usr/libexec/java_home -v 21)
+
+# bun completions
+[ -s "/Users/snowye/.bun/_bun" ] && source "/Users/snowye/.bun/_bun"
