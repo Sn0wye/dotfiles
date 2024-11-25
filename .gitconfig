@@ -12,10 +12,10 @@
 	email = 95551770+Sn0wye@users.noreply.github.com
 	editor = vim
 	signinkey = 6484D923B1300183331E5177A5780E721E66CA40
-	signingkey = A5780E721E66CA40
+	signingkey = 2CCC949C4D40646E
 
 [code]
-	editor = vscode
+	editor = nano
 
 [credential]
 	helper = store
