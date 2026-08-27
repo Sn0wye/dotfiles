@@ -1,20 +1,25 @@
+# Interactive shell. PATH lives in ~/.zprofile; load it here for non-login
+# terminals (Cursor, VS Code) that skip .zprofile.
+if [[ -z "${ZSH_PROFILE_LOADED:-}" ]]; then
+  source "$HOME/.zprofile"
+fi
+
 # Aliases
 alias c="code"
 alias zshconfig="code ~/.zshrc"
-alias reload="source ~/.zshrc"
+alias reload="source ~/.zprofile && source ~/.zshrc"
 alias lines="git ls-files | xargs wc -l"
 alias cat="bat"
 alias cls="clear && (tmux info >/dev/null 2>&1 && tmux clear-history || true)"
 alias ssh-oracle="command ssh ubuntu@164.152.43.166 -i ~/.ssh/oracle.key"
 
 # Functions
-
 killport() {
-    if [ -z "$1" ]; then
-        echo "Usage: killport <port>"
-    else
-        sudo lsof -t -i tcp:"$1" | xargs kill -9
-    fi
+  if [[ -z "$1" ]]; then
+    echo "Usage: killport <port>"
+  else
+    sudo lsof -t -i tcp:"$1" | xargs kill -9
+  fi
 }
 
 get_secret() {
@@ -24,40 +29,14 @@ get_secret() {
     --output text | jq -r .
 }
 
-# Oh My Zsh settings
-autoload -Uz compinit
-compinit -i
-source $ZSH/oh-my-zsh.sh
+export ZSH="$HOME/.oh-my-zsh"
+source "$ZSH/oh-my-zsh.sh"
 
-# Shell integrations
 eval "$(starship init zsh)"
 source <(fzf --zsh)
-# Only initialize zoxide if we're in an interactive shell
-if [[ $- == *i* ]]; then
-    eval "$(zoxide init --cmd cd zsh)"
-fi
-
-. "$HOME/.atuin/bin/env"
-
+eval "$(zoxide init --cmd cd zsh)"
 eval "$(atuin init zsh)"
 
-# Rider
-export PATH="/Applications/Rider.app/Contents/MacOS:$PATH"
+[[ -s "$HOME/.bun/_bun" ]] && source "$HOME/.bun/_bun"
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 21)
-
-# node via n (prefix /usr/local), packages via bun
-# bun completions
-[ -s "/Users/snowye/.bun/_bun" ] && source "/Users/snowye/.bun/_bun"
-
-# claude code
-export PATH="$HOME/.local/bin:$PATH"
-
-# opencode
-export PATH=/Users/snowye/.opencode/bin:$PATH
-
-# pi
-export PATH="/Users/snowye/.bun/bin:$PATH"
-
-# Machine-local secrets and overrides (not in git)
-[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
+[[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
