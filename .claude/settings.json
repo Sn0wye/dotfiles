@@ -1,0 +1,71 @@
+{
+  "env": {
+    "CLAUDE_CODE_USE_GITHUB": "1",
+    "OPENAI_MODEL": "github:copilot"
+  },
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "deny": [
+      "EnterPlanMode",
+      "ExitPlanMode",
+      "DesignSync",
+      "NotebookEdit",
+      "SendMessage",
+      "PushNotification",
+      "RemoteTrigger",
+      "ReportFindings",
+      "ScheduleWakeup",
+      "AskUserQuestion",
+      "CronCreate",
+      "CronDelete",
+      "CronList"
+    ],
+    "defaultMode": "bypassPermissions"
+  },
+  "model": "claude-opus-5",
+  "disableClaudeAiConnectors": true,
+  "disableBundledSkills": true,
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
+        ]
+      }
+    ]
+  },
+  "disableRemoteControl": true,
+  "disableWorkflows": true,
+  "disableArtifact": true,
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/snowye/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "caveman@caveman": true
+  },
+  "extraKnownMarketplaces": {
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
+      }
+    }
+  },
+  "effortLevel": "medium",
+  "tui": "fullscreen",
+  "autoMemoryEnabled": false,
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark",
+  "verbose": false,
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true
+}

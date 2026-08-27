@@ -1,0 +1,267 @@
+{
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.lineHeight": 1.8,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.rulers": [80, 120],
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+  "editor.parameterHints.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit"
+  },
+  "editor.matchBrackets": "never",
+  "editor.guides.indentation": true,
+  "editor.guides.highlightActiveBracketPair": false,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "workbench.tree.indent": 15,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#A277FF"
+  },
+  "workbench.colorTheme": "Omni Owl (Minimal Italics)",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.labelFormat": "short",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.editor.restoreViewState": false,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.sideBar.location": "right",
+  "breadcrumbs.enabled": true,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    ".eslintrc*": ".eslintignore",
+    "prettier.config*": ".prettierignore",
+    "package.json": "tsconfig*, vite*, pnpm-lock*, bun.lockb, .editorconfig, *.config.ts, package-lock.json, yarn.lock, .npmrc, biome.json, bun.lock, eslint.config*",
+    "tailwind.config*": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*",
+    "composer.json": "composer*, artisan, deploy*, phpunit*",
+    ".gitignore": ".gitattributes",
+    "Dockerfile": ".dockerignore, docker-compose*"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    "*.tsx": "typescriptreact",
+    ".env.*": "dotenv",
+    ".prettierrc": "json"
+  },
+  "prettier.semi": true,
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.arrowParens": "avoid",
+  "prettier.endOfLine": "auto",
+  "prettier.bracketSpacing": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[prisma]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[astro]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[proto3]": {
+    "editor.defaultFormatter": "zxh404.vscode-proto3"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.useInlineCompletions": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "typescript.tsserver.log": "off",
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.untrustedFiles": "open",
+  "material-icon-theme.activeIconPack": "nest",
+  "material-icon-theme.folders.associations": {
+    "adapters": "contract",
+    "grpc": "pipe",
+    "kube": "kubernetes",
+    "main": "lib",
+    "websockets": "pipe",
+    "implementations": "core",
+    "protos": "pipe",
+    "entities": "class",
+    "kafka": "pipe",
+    "use-cases": "functions",
+    "migrations": "tools",
+    "schemas": "class",
+    "useCases": "functions",
+    "eslint-config": "tools",
+    "typeorm": "database",
+    "_shared": "shared",
+    "mappers": "meta",
+    "fakes": "mock",
+    "modules": "components",
+    "subscribers": "messages",
+    "domain": "class",
+    "protocols": "contract",
+    "infra": "app",
+    "view-models": "views",
+    "presentation": "template",
+    "dtos": "typescript",
+    "http": "container",
+    "providers": "include",
+    "factories": "class",
+    "repositories": "mappings"
+  },
+  "material-icon-theme.languages.associations": {
+    "dotenv": "tune"
+  },
+  "material-icon-theme.files.associations": {
+    "tsconfig.json": "tune",
+    "*.webpack.js": "webpack",
+    "*.proto": "3d",
+    "ormconfig.json": "database"
+  },
+  "extensions.ignoreRecommendations": true,
+  "errorLens.enabledDiagnosticLevels": ["warning", "info", "error"],
+  "errorLens.excludeBySource": ["ts(2322)"],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "typescript": true
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "apc.header": {
+    "height": 36
+  },
+  "apc.listRow": {
+    "height": 24
+  },
+  "apc.stylesheet": {
+    ".editor-actions": "display: none"
+  },
+  "window.zoomLevel": 1,
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "never",
+  "security.promptForLocalFileProtocolHandling": false,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[yaml]": {
+    "diffEditor.ignoreTrimWhitespace": true
+  },
+  "workbench.editor.enablePreview": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.tools.autoApprove": true,
+  "chat.editing.confirmEditRequestRetry": false,
+  "git.openRepositoryInParentFolders": "always",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.svg": "default",
+    "*.pdf": "pdf.preview"
+  },
+  "json.schemaDownload.trustedDomains": {
+    "https://biomejs.dev": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://models.dev/model-schema.json": true,
+    "https://opencode.ai": true,
+    "https://opencode.ai/": true,
+    "https://opencode.ai/config.json": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://schemastore.azurewebsites.net/": true,
+    "https://unpkg.com": true,
+    "https://www.schemastore.org/": true
+  },
+  "claudeCode.preferredLocation": "panel",
+  "chat.mcp.gallery.enabled": true,
+  "gitlens.rebaseEditor.ordering": "asc",
+  "workbench.browser.openLocalhostLinks": false,
+  "explorer.confirmPasteNative": false,
+  "js/ts.experimental.useTsgo": true,
+  "workbench.experimental.modernUI": false,
+  "cursor.cpp.disabledLanguages": ["plaintext", "scminput"]
+}
