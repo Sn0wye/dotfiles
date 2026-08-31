@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "enabledProviders": [
+    "openai-codex",
+    "anthropic",
+    "openrouter"
+  ],
+  "displayMode": "used",
+  "resetTimeDisplayMode": "relative",
+  "showThresholdNotches": true,
+  "showNowNotch": true
+}
