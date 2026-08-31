@@ -1,0 +1,54 @@
+palette = 0=#191622
+palette = 1=#FF79C6
+palette = 2=#67E480
+palette = 3=#E7DE79
+palette = 4=#78D1E1
+palette = 5=#FF79C6
+palette = 6=#AB91E4
+palette = 7=#E1E1E6
+palette = 8=#191622
+palette = 9=#FF79C6
+palette = 10=#E7DE79
+palette = 11=#E7DE79
+palette = 12=#78D1E1
+palette = 13=#FF79C6
+palette = 14=#AB91E4
+palette = 15=#E1E1E6
+
+background = 191622
+foreground = E1E1E6
+cursor-color = 78D1E1
+selection-background = 41414D
+selection-foreground = E1E1E6
+
+
+
+# Background	#191622
+# Current Line	#44475a
+# Selection	#41414D
+# Foreground	#E1E1E6
+# Comment	#483C67
+# Cyan	#78D1E1
+# Green	#67E480
+# Orange	#E89E64
+# Pink	#FF79C6
+# Purple	#988BC7
+# Red	#E96379
+# Yellow	#E7DE79
+
+# palette = 0=#191622
+# palette = 1=#FF79C6
+# palette = 2=#67E480
+# palette = 3=#000000
+# palette = 4=#78D1E1
+# palette = 5=#FF79C6
+# palette = 6=#AB91E4
+# palette = 7=#000000
+# palette = 8=#000000
+# palette = 9=#000000
+# palette = 10=#E7DE79
+# palette = 11=#000000
+# palette = 12=#FF79C6
+# palette = 13=#000000
+# palette = 14=#8A2BE2
+# palette = 15=#000000

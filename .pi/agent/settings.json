@@ -1,0 +1,42 @@
+{
+  "lastChangelogVersion": "0.84.4",
+  "theme": "dark",
+  "packages": [
+    "npm:pi-subscription-meter",
+    "npm:pi-commandcode-provider",
+    "npm:pi-skill-dollar",
+    "npm:@narumitw/pi-btw",
+    "npm:pi-cursor-sdk",
+    "npm:@nicknisi/pi-cloak",
+    "npm:pi-extmgr",
+    "git:github.com/edxeth/pi-auto-session-titles",
+    "npm:pi-zentui",
+    "npm:@gotgenes/pi-anthropic-auth"
+  ],
+  "defaultProvider": "cursor",
+  "defaultModel": "grok-4.6",
+  "defaultThinkingLevel": "medium",
+  "enableSkillCommands": true,
+  "warnings": {
+    "anthropicExtraUsage": false
+  },
+  "hideThinkingBlock": false,
+  "compaction": {
+    "enabled": false
+  },
+  "autoSessionTitles": {
+    "enabled": true,
+    "provider": "commandcode",
+    "model": "z-ai/glm-5.3-flash",
+    "thinkingLevel": ""
+  },
+  "enabledModels": [
+    "commandcode/z-ai/glm-5.3-flash",
+    "anthropic/claude-opus-4-8",
+    "cursor/grok-4.6",
+    "anthropic/claude-opus-5",
+    "cursor/composer-2.5",
+    "commandcode/deepseek/deepseek-v4-flash",
+    "cursor/gpt-5.6-sol@272k"
+  ]
+}

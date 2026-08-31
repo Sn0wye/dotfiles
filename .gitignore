@@ -2,3 +2,15 @@
 .zshrc.local
 .codex/auth.json
 .claude.json
+.pi/agent/auth.json
+.pi/agent/sessions/
+.pi/agent/pi-sessions/
+.pi/agent/models-store.json
+.pi/agent/commandcode-models.json
+.pi/agent/cursor-sdk-model-list.json
+.pi/agent/cursor-sdk-context-windows.json
+.pi/agent/npm/
+.pi/agent/git/
+.pi/agent/.extmgr-cache/
+.pi/agent/bin/
+.pi/agent/skills/
