@@ -5,6 +5,9 @@ notify = [
     "/Users/snowye/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient",
     "turn-ended",
 ]
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
+personality = "pragmatic"
 
 [projects."/Users/snowye/code/projects/CloudCertify"]
 trust_level = "trusted"
@@ -32,12 +35,10 @@ status_line = [
 "gpt-5.6-sol" = 4
 
 [marketplaces.openai-bundled]
-last_updated = "2026-08-18T02:13:47Z"
 source_type = "local"
 source = "/Users/snowye/.codex/.tmp/bundled-marketplaces/openai-bundled"
 
 [marketplaces.openai-primary-runtime]
-last_updated = "2026-07-27T22:38:22Z"
 source_type = "local"
 source = "/Users/snowye/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
 
@@ -52,9 +53,6 @@ last_updated = "2026-08-22T01:37:14Z"
 last_revision = "340e33aef211d95769d252324854497af871dafe"
 source_type = "git"
 source = "https://github.com/anthropics/claude-plugins-official.git"
-
-[plugins."sites@openai-bundled"]
-enabled = true
 
 [plugins."visualize@openai-bundled"]
 enabled = true
@@ -98,6 +96,12 @@ enabled = true
 [plugins."browser@openai-bundled"]
 enabled = true
 
+[plugins."codex-app-tools@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
 [features]
 js_repl = false
 
@@ -110,15 +114,16 @@ startup_timeout_sec = 120
 NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
 NODE_REPL_NODE_MODULE_DIRS = "/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
 NODE_REPL_NODE_PATH = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node"
-NODE_REPL_TRUSTED_CODE_PATHS = "/Users/snowye/.codex"
+NODE_REPL_TRUSTED_CODE_PATHS = "/Users/snowye/.codex:/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
 CODEX_HOME = "/Users/snowye/.codex"
-NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "6d25aa7656feac858f3a3bdaea5bcbab0dbfd426c9de8e6931ce90c399ee8e4f,e13fd947e846d3d306e9249dd3c73d14931b6494803dbafb16cef85e6add9506"
 BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+BROWSER_USE_TINYSKY_ENABLED = "0"
 NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
 NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
 NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = "Control desktop apps on macOS through Computer Use."
 BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
-BROWSER_USE_CODEX_APP_VERSION = "26.721.41059"
+BROWSER_USE_CODEX_APP_VERSION = "26.825.32147"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/snowye/.codex/plugins/cache/openai-bundled/browser/26.825.32147/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
 CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex"
 
 [mcp_servers.computer-use]
@@ -127,13 +132,15 @@ args = ["mcp"]
 cwd = "."
 enabled = false
 
+[mcp_servers.cua_repl]
+command = "/Applications/ChatGPT.app/Contents/MacOS/ChatGPT"
+enabled = false
+
 [shell_environment_policy]
 inherit = "core"
 
 [shell_environment_policy.set]
-BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
 NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "6d25aa7656feac858f3a3bdaea5bcbab0dbfd426c9de8e6931ce90c399ee8e4f,e13fd947e846d3d306e9249dd3c73d14931b6494803dbafb16cef85e6add9506"
-NODE_REPL_TRUSTED_CODE_PATHS = "/Users/snowye/.codex"
 CLAUDE_CODE_USE_GITHUB = "1"
 OPENAI_MODEL = "github:copilot"
 
@@ -141,3 +148,32 @@ OPENAI_MODEL = "github:copilot"
 conversationDetailMode = "STEPS_COMMANDS"
 ambient-suggestions-enabled = false
 followUpQueueMode = "queue"
+enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "ultra", "max"]
+worktree-upstream-refresh-mode = "best-effort"
+appearanceTheme = "dark"
+appearanceDarkCodeThemeId = "codex"
+dock-icon-preference = "codex-system"
+usePointerCursors = false
+sansFontSize = 16
+codeFontSize = 14
+appearanceDiffMarkerStyle = "color"
+
+[desktop.appearanceDarkChromeTheme]
+accent = "#0169cc"
+accentSource = "chatgpt"
+contrast = 60
+ink = "#fcfcfc"
+opaqueWindows = false
+surface = "#111111"
+
+[desktop.appearanceDarkChromeTheme.fonts]
+
+[desktop.appearanceDarkChromeTheme.semanticColors]
+diffAdded = "#00a240"
+diffRemoved = "#e02e2a"
+skill = "#b06dff"
+
+[hooks.state]
+
+[hooks.state."/Users/snowye/.codex/hooks.json:pre_tool_use:0:0"]
+trusted_hash = "sha256:611801ec2e3d969b804521d5f231f6581b43d6af10a5b6406fab874286644e3b"
