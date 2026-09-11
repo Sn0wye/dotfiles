@@ -1,0 +1,26 @@
+# Replaces Stow's built-in ignore list. Keep the defaults plus scripts/.
+# https://www.gnu.org/software/stow/manual/html_node/Types-And-Syntax-Of-Ignore-Lists.html
+
+RCS
+.+,v
+
+CVS
+\.#.+
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+\.gitignore
+\.gitmodules
+
+.+~
+\#.*\#
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+scripts

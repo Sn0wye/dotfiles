@@ -23,3 +23,13 @@ git clone https://github.com/Sn0wye/dotfiles
 cd dotfiles
 stow --adopt .
 ```
+
+## Wallpaper
+
+`Pictures/wallpaper.jpeg` is stowed to `~/Pictures/wallpaper.jpeg`. Then:
+
+```sh
+scripts/wallpaper.sh
+```
+
+That only tells System Events to use the stowed file. `scripts/` stays out of `$HOME` via `.stow-local-ignore`.
