@@ -271,5 +271,6 @@
   "workbench.browser.openLocalhostLinks": false,
   "explorer.confirmPasteNative": false,
   "js/ts.experimental.useTsgo": true,
-  "workbench.experimental.modernUI": false
+  "workbench.experimental.modernUI": false,
+  "terminal.integrated.initialHint": false
 }
