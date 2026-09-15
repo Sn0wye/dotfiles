@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.84.4",
+  "lastChangelogVersion": "0.85.1",
   "theme": "dark",
   "packages": [
     "npm:pi-subscription-meter",
@@ -11,7 +11,8 @@
     "npm:pi-extmgr",
     "git:github.com/edxeth/pi-auto-session-titles",
     "npm:pi-zentui",
-    "npm:@gotgenes/pi-anthropic-auth"
+    "npm:@gotgenes/pi-anthropic-auth",
+    "npm:pi-subagents"
   ],
   "defaultProvider": "cursor",
   "defaultModel": "grok-4.6",
@@ -26,17 +27,40 @@
   },
   "autoSessionTitles": {
     "enabled": true,
-    "provider": "commandcode",
-    "model": "z-ai/glm-5.3-flash",
-    "thinkingLevel": ""
+    "provider": "openai-codex",
+    "model": "gpt-5.6-luna",
+    "thinkingLevel": "low"
   },
   "enabledModels": [
-    "commandcode/z-ai/glm-5.3-flash",
-    "anthropic/claude-opus-4-8",
-    "cursor/grok-4.6",
     "anthropic/claude-opus-5",
+    "openai-codex/gpt-5.6-sol",
+    "cursor/grok-4.6",
+    "anthropic/claude-opus-4-8",
+    "commandcode/z-ai/glm-5.3-flash",
+    "openai-codex/gpt-5.6-luna",
     "cursor/composer-2.5",
-    "commandcode/deepseek/deepseek-v4-flash",
-    "cursor/gpt-5.6-sol@272k"
-  ]
+    "commandcode/deepseek/deepseek-v4-flash"
+  ],
+  "subagents": {
+    "defaultModel": "openai-codex/gpt-5.6-luna",
+    "defaultThinking": "low",
+    "defaultExtensions": [
+      "/Users/snowye/.pi/agent/npm/node_modules/pi-cursor-sdk/dist/index.js",
+      "/Users/snowye/.pi/agent/npm/node_modules/pi-commandcode-provider/index.ts"
+    ],
+    "watchdog": {
+      "enabled": false,
+      "main": {
+        "enabled": false
+      }
+    },
+    "agentOverrides": {
+      "cursor-agent": {
+        "disabled": true
+      },
+      "cursor-agent-writer": {
+        "disabled": true
+      }
+    }
+  }
 }
