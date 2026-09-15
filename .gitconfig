@@ -1,6 +1,6 @@
 [init]
-	templateDir =  main
 	defaultBranch = main
+
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
@@ -10,16 +10,10 @@
 [user]
 	name = Gabriel Trzimajewski
 	email = 95551770+Sn0wye@users.noreply.github.com
-	editor = vim
-	signinkey = 6484D923B1300183331E5177A5780E721E66CA40
 	signingkey = 2CCC949C4D40646E
-
-[code]
-	editor = nano
 
 [credential]
 	helper = store
-
 
 [alias]
     # clean all local branches not in the remote
@@ -39,13 +33,17 @@
     ls = log --pretty=format:"%C(blue)%h%Cred%d\\ %Creset%s%C(yellow)\\ [%cn]" --decorate --graph
     ll = log --pretty=format:"%C(blue)%h%Cred%d\\ %Creset%s%C(yellow)\\ %ar\\ [%cn]" --decorate --numstat
     fpush = push -u origin HEAD
-[safe]
+
 [push]
 	default = current
 	autoSetupRemote = true
+
 [core]
 	autocrlf = input
+	editor = code
+
 [commit]
 	gpgsign = true
+	
 [gpg]
 	program = /opt/homebrew/bin/gpg
