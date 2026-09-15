@@ -14,3 +14,33 @@
 .pi/agent/.extmgr-cache/
 .pi/agent/bin/
 .pi/agent/skills/
+
+# JetBrains writes these next to the stowed settings. Do not commit them.
+Library/Application Support/JetBrains/**/plugins/
+Library/Application Support/JetBrains/**/ssl/
+Library/Application Support/JetBrains/**/event-log-metadata/
+Library/Application Support/JetBrains/**/workspace/
+Library/Application Support/JetBrains/**/scratches/
+Library/Application Support/JetBrains/**/consoles/
+Library/Application Support/JetBrains/**/jdbc-drivers/
+Library/Application Support/JetBrains/**/resharper-host/
+Library/Application Support/JetBrains/**/*.db
+Library/Application Support/JetBrains/**/.lock
+Library/Application Support/JetBrains/**/*.key
+Library/Application Support/JetBrains/**/*.license
+Library/Application Support/JetBrains/**/options/trusted-paths.xml
+Library/Application Support/JetBrains/**/options/path.macros.xml
+Library/Application Support/JetBrains/**/options/window.state.xml
+Library/Application Support/JetBrains/**/options/remote-servers.xml
+Library/Application Support/JetBrains/**/options/github.xml
+Library/Application Support/JetBrains/**/options/gitlab.xml
+Library/Application Support/JetBrains/**/options/*.local.xml
+Library/Application Support/JetBrains/**/options/actionSummary.xml
+Library/Application Support/JetBrains/**/options/*statistics.xml
+Library/Application Support/JetBrains/**/options/jdk.table.xml
+Library/Application Support/JetBrains/**/options/recentProjects.xml
+Library/Application Support/JetBrains/**/options/ConversationToolStoreService.xml
+Library/Application Support/JetBrains/**/options/window.layouts.xml
+Library/Application Support/JetBrains/**/options/project.default.xml
+Library/Application Support/JetBrains/**/tasks/
+Library/Application Support/JetBrains/**/light-edit/

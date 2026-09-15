@@ -43,3 +43,15 @@ scripts/aerial.sh
 ```
 
 Pick Screen Saver → Aerials → Los Angeles once per Mac. Do not delete `~/Library/Application Support/com.apple.wallpaper/aerials`.
+
+## IntelliJ IDEA
+
+Ultimate 2026.2 settings are stowed from `Library/Application Support/JetBrains/IntelliJIdea2026.2/`. Editor options, the VS Code OSX keymap, Catppuccin/Dracula schemes, code style, and `idea.vmoptions` (`-Xmx4096m`). Plugins are listed in `plugins.txt`, not checked in.
+
+Close IntelliJ before `stow --adopt .`. After a major upgrade the directory name changes; copy or restow into the new folder.
+
+Restore plugins from a terminal with IntelliJ quit:
+
+```sh
+xargs "/Applications/IntelliJ IDEA.app/Contents/MacOS/idea" installPlugins < "Library/Application Support/JetBrains/IntelliJIdea2026.2/plugins.txt"
+```

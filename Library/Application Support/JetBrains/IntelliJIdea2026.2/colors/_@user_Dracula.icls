@@ -1,0 +1,16 @@
+<scheme name="_@user_Dracula" version="142" parent_scheme="Darcula">
+  <option name="FONT_SCALE" value="1.0" />
+  <metaInfo>
+    <property name="created">2024-01-28T12:41:29</property>
+    <property name="ide">Rider</property>
+    <property name="ideVersion">2023.3.3.0.0</property>
+    <property name="modified">2024-11-29T17:38:08</property>
+    <property name="originalScheme">Dracula</property>
+    <property name="partialSave">true</property>
+    <property name="pluginId">com.vermouthx.idea</property>
+  </metaInfo>
+  <option name="LINE_SPACING" value="1.2" />
+  <option name="EDITOR_FONT_SIZE" value="15" />
+  <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+  <option name="EDITOR_LIGATURES" value="true" />
+</scheme>

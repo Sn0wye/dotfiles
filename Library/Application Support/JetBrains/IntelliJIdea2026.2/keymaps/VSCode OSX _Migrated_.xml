@@ -1,0 +1,52 @@
+<keymap version="1" name="VSCode OSX (Migrated)" parent="VSCode OSX">
+  <action id="$Redo">
+    <keyboard-shortcut first-keystroke="shift meta z" />
+    <keyboard-shortcut first-keystroke="shift alt back_space" />
+    <keyboard-shortcut first-keystroke="meta y" />
+  </action>
+  <action id="ActivateProjectToolWindow">
+    <keyboard-shortcut first-keystroke="meta b" />
+  </action>
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="meta j" />
+  </action>
+  <action id="ChooseRunConfiguration" />
+  <action id="CodeCompletion">
+    <keyboard-shortcut first-keystroke="alt escape" />
+    <keyboard-shortcut first-keystroke="meta space" />
+  </action>
+  <action id="CommentByLineComment">
+    <keyboard-shortcut first-keystroke="meta semicolon" />
+  </action>
+  <action id="OpenInlineChatAction">
+    <keyboard-shortcut first-keystroke="shift ctrl g" />
+  </action>
+  <action id="Rerun">
+    <keyboard-shortcut first-keystroke="shift meta f5" />
+  </action>
+  <action id="RerunFailedTests" />
+  <action id="RiderDebuggerApplyEncChagnes">
+    <keyboard-shortcut first-keystroke="meta s" />
+  </action>
+  <action id="RiderEditSourceInRightSplit">
+    <mouse-shortcut keystroke="alt button1 doubleClick" />
+  </action>
+  <action id="RiderUnitTestAppendTestsAction" />
+  <action id="RiderUnitTestCoverSolutionAction" />
+  <action id="RiderUnitTestDebugContextAction">
+    <keyboard-shortcut first-keystroke="shift ctrl d" />
+  </action>
+  <action id="RiderUnitTestDotMemoryUnitContextAction" />
+  <action id="RiderUnitTestDotMemoryUnitSolutionAction" />
+  <action id="RiderUnitTestNewSessionAction" />
+  <action id="RiderUnitTestRepeatPreviousRunAction" />
+  <action id="RiderUnitTestRunContextAction">
+    <keyboard-shortcut first-keystroke="shift ctrl r" />
+  </action>
+  <action id="RiderUnitTestRunContextUntilFailAction" />
+  <action id="RiderUnitTestRunCurrentSessionAction" />
+  <action id="RiderUnitTestRunSolutionAction" />
+  <action id="RiderUnitTestSessionAbortAction" />
+  <action id="RiderUnitTestSessionRerunFailedTestsAction" />
+  <action id="ShowProjectStructureSettings" />
+</keymap>
