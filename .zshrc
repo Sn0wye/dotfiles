@@ -5,13 +5,13 @@ if [[ -z "${ZSH_PROFILE_LOADED:-}" ]]; then
 fi
 
 # Aliases
+# Host-specific aliases live in ~/.zshrc.local (not in git).
 alias c="code"
 alias zshconfig="code ~/.zshrc"
 alias reload="source ~/.zprofile && source ~/.zshrc"
 alias lines="git ls-files | xargs wc -l"
 alias cat="bat"
 alias cls="clear && (tmux info >/dev/null 2>&1 && tmux clear-history || true)"
-
 
 # Functions
 killport() {
