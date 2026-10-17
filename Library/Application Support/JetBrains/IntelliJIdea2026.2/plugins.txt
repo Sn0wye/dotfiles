@@ -1,0 +1,5 @@
+com.mallowigi
+com.github.catppuccin.jetbrains
+com.vermouthx.idea
+com.github.copilot
+ru.adelf.idea.dotenv

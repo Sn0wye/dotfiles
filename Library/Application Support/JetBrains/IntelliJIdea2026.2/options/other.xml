@@ -1,0 +1,46 @@
+<application>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="LangManager">
+    <option name="languageName" value="JAVA" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="13.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "5",
+    "NextRunPlatformUpdateBuild": "IU-262.10315.125",
+    "NextRunPlatformUpdateSelfBuild": "IU-253.33813.55",
+    "NextRunPlatformUpdateVersion": "2026.2.2",
+    "RunOnceActivity.java.code.vision.default.position.was.set": "true",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "evlsprt3.253": "4",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "253.33813.55",
+    "fileTypeChangedCounter": "2",
+    "fontSizeToResetConsole": "16.0",
+    "fontSizeToResetEditor": "16.0",
+    "ide.islands.ab3": "true",
+    "ide.memory.adjusted": "true",
+    "ide.self.update.started.for.build": "IU-253.33813.55",
+    "ift.hide.welcome.screen.promo": "true",
+    "installed.kotlin.plugin.version": "241.19416.15-IJ",
+    "llm.installer.last.toolwindow.state": "LLM_INSTALLER",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "previousColorScheme": "_@user_Catppuccin Mocha",
+    "registry.to.advanced.settings.migration.build": "IU-253.33813.55",
+    "trial.state.last.availability.check": "1789468045525",
+    "trial.state.last.availability.state": "true",
+    "trial.state.last.state": "TRIAL_AVAILABLE"
+  },
+  "keyToStringList": {
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>
